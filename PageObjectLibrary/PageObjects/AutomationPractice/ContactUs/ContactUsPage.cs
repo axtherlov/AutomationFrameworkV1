@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
 using PageObjectLibrary.Base;
 
@@ -9,6 +10,8 @@ namespace PageObjectLibrary.PageObjects.AutomationPractice.ContactUs
 
         #region web controls
 
+        //[FindsBy(How = How.Id,Using = "value")]
+        //private IWebDriver subjectHeading2;
         private IWebElement subjectHeading => GetDriver().FindElement(By.Id("id_contact"));
         private IWebElement emailInput => GetDriver().FindElement(By.Id("email"));
         private IWebElement orderReferenceInput => GetDriver().FindElement(By.Id("id_order"));
